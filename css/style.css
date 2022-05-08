@@ -22,8 +22,9 @@ body{
 	padding: 0px;
 	background-image: url("../images/background.jpg");
 	background-size: cover;
-	background-position: top 10% left 10%;
+	background-position: top -9% left -50%;
 	background-repeat: no-repeat;
+	
 
 	
 }
@@ -80,6 +81,8 @@ body{
 	margin-top: 10%;
 	border-radius: 15px;
 	padding: 25px 25px;
+	margin: 0;
+
 }
 
 .login h1 {
