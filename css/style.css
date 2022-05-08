@@ -1,0 +1,202 @@
+@font-face{
+	font-family: "DancingScript";
+	src: url("../fonts/DancingScript-VariableFont_wght.ttf");
+}
+@font-face{	
+	font-family: koulen;
+	src: url("../fonts/Koulen-Regular.ttf");
+}
+@font-face{
+	font-family: Dongle;
+	src: url("../fonts/Dongle-Regular.ttf");
+}
+@font-face{
+	font-family: babas;
+	src: url("../fonts/BebasNeue-Regular.ttf");
+}
+
+
+
+body{  	
+	margin: 0px;
+	padding: 0px;
+	background-image: url("../images/background.jpg");
+	background-size: cover;
+	background-position: top 10% left 10%;
+	background-repeat: no-repeat;
+
+	
+}
+
+.logo{
+	width: 50px;
+}
+
+.header{
+	width: 98.7%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background-color: #97C4B8;
+	padding: 10px 10px;
+	position: sticky;
+}
+
+.logoname{
+	font-size: 40px;
+	position: absolute;
+	margin-left: 80px;
+	font-family: DancingScript;
+}
+
+.navbar{
+	display: flex;
+}
+
+.navbar li{
+	font-size: 20px;
+    list-style: none;  
+    padding: 0px 20px;
+}
+
+.navbar li a{
+	text-decoration: none;
+	color: #F9F3EE;
+	font-family: koulen;
+	transition: 0.2s ease;
+}
+
+
+.navbar li a:hover,#navbar li a:active{
+	color: green;
+}
+
+
+
+.login{
+	background-color: white;
+	position: absolute;
+  	margin-left: 10%;
+	margin-top: 10%;
+	border-radius: 15px;
+	padding: 25px 25px;
+}
+
+.login h1 {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	font-family: 'Koulen';
+	font-size: 30px;
+	padding-top: 1px;
+	border-bottom: 2px solid silver;
+}	
+
+.login form {
+	padding: 0 40px;
+	box-sizing: border-box;
+}
+
+form .fieldname{
+	position: relative;
+	border-bottom: 2px solid #adadad;
+	width: 100%;
+	font-family: dongle;
+	
+
+}
+.fieldname input{
+	width: 100%;
+	padding: 0 5px;
+	height: 40px;
+	font-size: 16px;
+	background: none;
+	outline: none;
+	border: none;
+
+	
+}
+.fieldname label{
+	position: absolute;
+	top: 50%;
+	left: 5px;
+	color: #adadad;
+	transform: translateY(-50%);
+	font-size: 25px;
+	pointer-events: none;
+	transition: .3s;
+}
+.fieldname span::before {
+    content: '';
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background: #2691d9;
+    transform: .5s;
+}
+
+.fieldname input:focus ~ label,
+.fieldname input:valid ~ label{
+	top: 5px;
+	color: #2691d9;
+}
+
+.fieldname input:focus ~ span::before,
+.fieldname input:valid ~ span::before{
+	
+	width: 100%;
+}
+
+
+
+
+.pass{
+	margin:-5px 0 20px 5px;
+	cursor: pointer;
+	text-align: center;
+}
+.pass a {
+	color: #adadad;
+	text-decoration: none;
+	font-family: babas;
+	font-size: 15px;
+
+}
+.pass:hover {
+	text-decoration: underline;
+}
+
+input[type="submit"]{
+	width: 100%;
+	height: 30px;
+    border: 2px;
+	background: #97C4B8;
+	border-radius: 25px;
+	font-size:20px;
+	color: white;
+	font-weight: 70;
+	cursor: pointer;
+	outline: none;
+	font-family: babas;
+	
+}
+input[type="submit"]:hover{
+	
+	border: 2px solid #68A7AD;
+
+}
+
+.signup{
+	text-align: center;
+	padding: 20px;
+	font-family: babas;
+}
+.signup a{
+	text-decoration: none;
+	font-family: babas;
+}
+.signup a:hover{
+	color: Green;
+}
